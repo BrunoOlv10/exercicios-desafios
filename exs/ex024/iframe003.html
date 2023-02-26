@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ut soluta architecto quas eius, at nemo ducimus dolorum obcaecati omnis amet, officiis quaerat impedit exercitationem ipsam repellendus explicabo odit perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores amet fugiat architecto neque repudiandae, ducimus quas a temporibus quod quo officiis voluptas id facilis sit exercitationem eos ut praesentium debitis.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ut soluta architecto quas eius, at nemo ducimus dolorum obcaecati omnis amet, officiis quaerat impedit exercitationem ipsam repellendus explicabo odit perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores amet fugiat architecto neque repudiandae, ducimus quas a temporibus quod quo officiis voluptas id facilis sit exercitationem eos ut praesentium debitis.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis inventore impedit reprehenderit tempora modi molestias, beatae incidunt minus odio? Nam libero dolor velit ab facere dolores dolorum tenetur odio!</p><img src='imagens/PremierLeague.png'>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis inventore impedit reprehenderit tempora modi molestias, beatae incidunt minus odio? Nam libero dolor velit ab facere dolores dolorum tenetur odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque veritatis consequuntur alias aspernatur praesentium numquam ab voluptatem, voluptatum et iste ipsum natus eum quae ut? Quod placeat magni sint!</p>
+</body>
+</html>
