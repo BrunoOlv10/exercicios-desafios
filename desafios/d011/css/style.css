@@ -1,5 +1,5 @@
 html {
-    background: url(img/espaco.jpg) no-repeat;
+    background: url(../img/espaco.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -21,19 +21,14 @@ img {
 }
 
 @media only screen and (max-width: 780px) {
-    img {
-        width: 90vw;
-    }
+    img {width: 80vw;}
 }
 
 @media only screen and (min-width: 750px) {
-    img {
-        width: 50vw;
-    }
+    img {width: 50vw;}
+
 }
 
 @media only screen and (min-width: 1500px) {
-    img {
-        width: 30vw;
-    }
+    img {width: 28vw;}
 }
