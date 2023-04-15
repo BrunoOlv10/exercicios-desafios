@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Toda as demais mídias */
+/* Todas as demais mídias */
 
 /* Typical Device Breakpoints 
 ------------------------------
@@ -15,6 +15,17 @@ Grandes telas: acima de 1200px
     
 }
 
-@media screen and (max-width: 600px) {  
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+    
+}
 
+/* desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+/* grandes telas */
+@media screen and (min-width: 1200px) {
+    
 }
