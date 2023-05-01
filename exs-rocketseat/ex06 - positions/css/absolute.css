@@ -4,11 +4,16 @@
     margin-bottom: 8px;
 }
 
+main {
+    margin-top: 100px;
+    position: relative;
+}
+
 .box1 {
     background-color: red;
-    position: relative; /* respeita o posicionamento dos outros elementos (relativo aos outros elementos) */
-    left: 100px;
-    top: 80px;
+    position: absolute; /* não respeita o posicionamento dos outros elementos */
+    left: 0px;
+    top: 0px;
 }
 
 .box2 {
