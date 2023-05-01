@@ -1,0 +1,29 @@
+.box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.box1 {
+    background-color: red;
+    position: absolute; /* add para stacking */
+    left: 5px;
+    top: 5px;
+    z-index: 2; /* camada */
+}
+
+.box2 {
+    background-color: green;
+    position: absolute; /* add para stacking */
+    left: 10px;
+    top: 10px;
+    z-index: 1; /* camada */
+}
+
+.box3 {
+    background-color: blue;
+    position: absolute; /* add para stacking */
+    left: 15px;
+    top: 15px;
+    z-index: 3; /* camada */
+}
