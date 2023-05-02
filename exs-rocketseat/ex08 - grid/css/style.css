@@ -9,26 +9,32 @@ body {
     "main aside"
     "footer footer";
 
-    grid-template-rows: 30px 1fr 40px; /* altura da linha */
+    grid-template-rows: 35px 1fr 50px; /* altura da linha */
     grid-template-columns: 1fr 105px;
 }
 
-h2 {
-    text-align: center;
-}
-
 header {
-    display: flex; /* display para centralizar */
-    align-items: center; /* vertical */
-    justify-content: center; /* horizontal */
+    display: flex; 
+    justify-content: space-between; 
     grid-area: header;
+    padding: 0 15px;
     background-color: green;
 }
 
-main {
+div {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.top {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    display: flex; /* display para centralizar */
+    align-items: center; /* centralizar vertical */
+    justify-content: center; /* centralizar horizontal */
     grid-area: main;
     background-color: red;
 }
