@@ -13,7 +13,17 @@
         inputmode = numeric - mostra apenas o teclado númerico em smartphones 
         
         autocomplete = new-password - navegador sugere uma nova senha
-    -->
+        -->
+
+        <input type="email" multiple>
+        <!-- multiple - o campo aceita 1 ou mais emails, apenas separar os mesmos por vírgulas  -->
+
+        <input type="email" pattern="+@gmail\.com" title="Somente emails gmail.com serão aceitos">
+        <!-- 
+        pattern - define um padrão de domínio para validar o email inserido pelo usuário 
+        
+        title - aviso para o usuário sobre o padrão de domínio definido
+        -->
     </form>
 </body>
 </html>
