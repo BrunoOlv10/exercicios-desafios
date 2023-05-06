@@ -12,7 +12,7 @@
         <option>http://meusite.com.br</option>
         <option>https://meusite.com.br</option>
     </datalist>
-    <form action="">
+    <form action="" method="post" enctype="multipart/form-data">
         <label for="password">Senha: </label><input type="password" inputmode="numeric" autocomplete="new-password">
         <!-- 
         inputmode = numeric - mostra apenas o teclado númerico em smartphones 
@@ -34,6 +34,15 @@
         <!-- 
             spellcheck = false - desativa a verificação ortográfica para esse input
          -->
+
+         <label for="arquivo1">Arquivo 1: </label><input type="file" accept=".pdf">
+         <label for="arquivo2">Arquivo 2: </label><input type="file" multiple>
+         <!-- 
+            accept - define quais arquivos serão aceitos 
+            Exemplo: .doc, .docx, .pdf, audio/*, image/png, .png
+
+            multiple - permite o envio de múltiplos arquivos
+          -->
     </form>
 </body>
 </html>
