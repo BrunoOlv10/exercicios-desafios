@@ -5,25 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <datalist id="urlsdarta">
+        <option>http://meusite.com.br</option>
+        <option>https://meusite.com.br</option>
+    </datalist>
     <form action="">
-        <input type="password" inputmode="numeric" autocomplete="new-password"> 
+        <label for="password">Senha: </label><input type="password" inputmode="numeric" autocomplete="new-password">
         <!-- 
         inputmode = numeric - mostra apenas o teclado númerico em smartphones 
         
         autocomplete = new-password - navegador sugere uma nova senha
         -->
 
-        <input type="email" multiple>
+        <label for="email1">Email 1: </label><input type="email" multiple>
         <!-- multiple - o campo aceita 1 ou mais emails, apenas separar os mesmos por vírgulas  -->
 
-        <input type="email" pattern="+@gmail\.com" title="Somente emails gmail.com serão aceitos">
+        <label for="email2">Email 2: </label><input type="email" pattern="+@gmail\.com" title="Somente emails gmail.com serão aceitos">
         <!-- 
-        pattern - define um padrão de domínio para validar o email inserido pelo usuário 
+        pattern - define um padrão para validar o email inserido pelo usuário 
         
         title - aviso para o usuário sobre o padrão de domínio definido
         -->
+
+        <label for="link">Link:</label><input type="url" placeholder="http://example.com.br" pattern=".*\.com\.br" title="Somente domínios .com.br serão aceitos" required list="urlsdarta" spellcheck="false">
+        <!-- 
+            spellcheck = false - desativa a verificação ortográfica para esse input
+         -->
     </form>
 </body>
 </html>
