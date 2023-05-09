@@ -33,6 +33,10 @@ input, textarea {
     margin: auto;
 }
 
+textarea {
+    resize: none;
+}
+
 .mensagem {
     margin-left: 35px;
 }
@@ -40,8 +44,8 @@ input, textarea {
 button {
    display: flex;
    align-items: center;
+   width: 60px;
    margin: auto;
    margin-top: 20px;
    margin-bottom: 10px;
-   width: 60px;
 }
