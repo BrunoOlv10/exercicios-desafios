@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #181818;
+    color: white;
+}
+
+form {
+    width: 250px;
+}
+
+legend {
+    margin-left: 8px;
+}
+
+
+input, label, textarea, button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 135px;
+}
+
+input, textarea {
+    margin: auto;
+}
+
+.mensagem {
+    margin-left: 35px;
+}
+
+button {
+   display: flex;
+   align-items: center;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   width: 60px;
+}
