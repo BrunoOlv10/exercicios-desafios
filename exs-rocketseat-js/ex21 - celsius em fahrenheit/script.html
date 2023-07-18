@@ -1,0 +1,42 @@
+<script>
+      /* Celsius em fahrenheit
+
+      Crie uma função que receba uma string em celsius ou fahrenheit e faça a transformação de uma unidade para outra
+
+      C = (F - 32) * 5/9
+
+      F = C * 9/5 + 32
+
+      */
+
+  function conversorTemperatura(temperatura) {
+      const celsiusIdentificado = temperatura.toUpperCase().includes('C')
+      const fahrenheitIdentificado = temperatura.toUpperCase().includes('F')
+
+    // fluxo de erro
+      if(!celsiusIdentificado && !fahrenheitIdentificado) {
+          throw new Error('Grau inválido')
+      }
+
+      // fluxo ideal F para C
+      let grauAtual = Number(temperatura.toUpperCase().replace("F", "")); 
+      let formula = (fahrenheit) => (fahrenheit - 32) * 5/9
+      let grau = 'C'
+
+      // fluxo alternativo C para F
+      if(celsiusIdentificado) { 
+        grauAtual = Number(temperatura.toUpperCase().replace("C", "")); 
+        formula = celsius => celsius * 9/5 + 32
+        grau = 'F'
+      }
+
+      return formula(grauAtual) + grau
+
+  }
+      try {
+          console.log(conversorTemperatura('10C'))
+          console.log(conversorTemperatura('50F'))
+      } catch (error) {
+          console.log(error.message)
+      }
+</script>
